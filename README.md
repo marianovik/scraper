@@ -1,5 +1,5 @@
 ***Hi there!***
------------------------------------
+---
 
 It is my 24-hour-written (to be honest, significantly less) scraper code. 
 Unfortunately, now faireSpider, salesSpider, mainStoreSpider and socialSpider are working only from command like like shown below:

@@ -50,14 +50,12 @@ class SalesSpider(scrapy.Spider):
         yield item
 
 
-def get_platform_link(brand_name, platform):
+def get_shop_link(brand_name, shop):
     """Generating the links in case none was found on main page"""
-    if platform == 'A':
+    if shop == 'A':
         base_url = 'https://www.amazon.com/shop/'
-    elif platform == 'E':
+    elif shop == 'E':
         base_url = 'https://www.etsy.com/shop/'
-    elif platform == 'K':
-        base_url == 'https://www.kickstarter.com/profile/'
     name_control_list = ['llc', 'lc', 'ltd', 'co', 'inc', 'llc.', 'lc.', 'ltd.', 'co.', 'inc.']
     coma_control = [',', '.', ')', ':', " ", '', "'"]
     brand_letter_split = list(brand_name)
